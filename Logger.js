@@ -1,5 +1,5 @@
-(function(Logger, $, undefined) {
-
+(function() {
+    this.Logger={};
     if (!window.console) window.console = {};
     if (!window.console.log) window.console.log = function() {};
     if (!window.console.warn) window.console.warn = function() {};
@@ -40,4 +40,4 @@
         console.log(parse(arguments), 'border-radius:3px;background:#dff0d8;color: #3c763d;border-color:#ebccd1');
     }
 
-}(window.Logger = window.Logger || {}, jQuery));
+}());
