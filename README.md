@@ -8,7 +8,7 @@ Include in the main script the following (enable or disable logs)
 ```javascript
 //For production systems
 Logger.disableLog();
-//For development systems
+//For development systems (Default)
 Logger.enableLog();
 ```
 
