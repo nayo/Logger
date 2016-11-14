@@ -4,7 +4,7 @@ Control logs for production systems and development.
 
 ## Usage
 
-Include principal js (enable or disabled logs)
+Include in the main script the following (enable or disable logs)
 ```javascript
 //For production systems
 Logger.disableLog();
@@ -12,7 +12,7 @@ Logger.disableLog();
 Logger.enableLog();
 ```
 
-And the other using the following script
+And in the other scripts use the following for logger
 ```javascript
 
 Logger.success(var1,var2,...,varN);
