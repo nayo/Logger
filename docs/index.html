@@ -1,15 +1,95 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Example Logger.js</title>
-</head>
-<body>
+<html lang="en-us"><head>
+    <meta charset="UTF-8">
+    <title>Logger js by nayo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Logger js</h1>
+      <h2 class="project-tagline">Logger javascript with option enable or disable console print logs</h2>
+      <a href="https://github.com/nayo/Logger" class="btn">View on GitHub</a>
+      <a href="https://github.com/nayo/Logger/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/nayo/Logger/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-<h1>Hello world!!!</h1>
-  ------------------
-<h2>Open de console(F12)</h2>
+    <section class="main-content">
+      <h1>
+<a id="loggerjs" class="anchor" href="#loggerjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Logger.js</h1>
 
+<p>Control logs for production systems and development.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Include in the main script the following (enable or disable logs)</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">//For production systems</span>
+<span class="pl-smi">Logger</span>.<span class="pl-en">disableLog</span>();
+<span class="pl-c">//For development systems (Default)</span>
+<span class="pl-smi">Logger</span>.<span class="pl-en">enableLog</span>();</pre></div>
+
+<p>And in the other scripts use the following for logger, (Theme Bootstrap)</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">Logger</span>.<span class="pl-en">success</span>(var1,var2,<span class="pl-k">...</span>,varN);
+<span class="pl-smi">Logger</span>.<span class="pl-en">info</span>(var1,var2,<span class="pl-k">...</span>,varN);
+<span class="pl-smi">Logger</span>.<span class="pl-en">warning</span>(var1,var2,<span class="pl-k">...</span>,varN);
+<span class="pl-smi">Logger</span>.<span class="pl-en">danger</span>(var1,var2,<span class="pl-k">...</span>,varN);
+</pre></div>
+
+<h2>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example</h2>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;!DOCTYPE html&gt;
+&lt;<span class="pl-ent">html</span>&gt;
+&lt;<span class="pl-ent">head</span>&gt;
+&lt;<span class="pl-ent">title</span>&gt;Example Logger.js&lt;/<span class="pl-ent">title</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>Logger.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;/<span class="pl-ent">head</span>&gt;
+&lt;<span class="pl-ent">body</span>&gt;
+
+&lt;<span class="pl-ent">h1</span>&gt;Hello world!!!&lt;/<span class="pl-ent">h1</span>&gt;
+
+&lt;/<span class="pl-ent">body</span>&gt;
+&lt;/<span class="pl-ent">html</span>&gt;
+<span class="pl-s1">&lt;<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s1"><span class="pl-smi">Logger</span>.<span class="pl-en">disableLog</span>(); <span class="pl-c">//disable logs</span></span>
+<span class="pl-s1"><span class="pl-smi">Logger</span>.<span class="pl-en">success</span>(<span class="pl-s"><span class="pl-pds">"</span>Alert type success<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>this not display<span class="pl-pds">"</span></span>);</span>
+<span class="pl-s1"><span class="pl-smi">Logger</span>.<span class="pl-en">info</span>(<span class="pl-s"><span class="pl-pds">"</span>Alert type info<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>this not display<span class="pl-pds">"</span></span>);</span>
+<span class="pl-s1"><span class="pl-smi">Logger</span>.<span class="pl-en">warning</span>(<span class="pl-s"><span class="pl-pds">"</span>Alert type warning<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>this not display<span class="pl-pds">"</span></span>);</span>
+<span class="pl-s1"><span class="pl-smi">Logger</span>.<span class="pl-en">danger</span>(<span class="pl-s"><span class="pl-pds">"</span>Alert type danger<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>this not display<span class="pl-pds">"</span></span>);</span>
+<span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-smi">Logger</span>.<span class="pl-en">enableLog</span>(); <span class="pl-c">//enable logs</span></span>
+<span class="pl-s1"><span class="pl-smi">Logger</span>.<span class="pl-en">success</span>(<span class="pl-s"><span class="pl-pds">"</span>Alert type success<span class="pl-pds">"</span></span>);</span>
+<span class="pl-s1"><span class="pl-smi">Logger</span>.<span class="pl-en">info</span>(<span class="pl-s"><span class="pl-pds">"</span>Alert type info<span class="pl-pds">"</span></span>);</span>
+<span class="pl-s1"><span class="pl-smi">Logger</span>.<span class="pl-en">warning</span>(<span class="pl-s"><span class="pl-pds">"</span>Alert type warning<span class="pl-pds">"</span></span>);</span>
+<span class="pl-s1"><span class="pl-smi">Logger</span>.<span class="pl-en">danger</span>(<span class="pl-s"><span class="pl-pds">"</span>Alert type danger<span class="pl-pds">"</span></span>);</span>
+<span class="pl-s1"></span>
+<span class="pl-s1">&lt;/<span class="pl-ent">script</span>&gt;</span>
+
+
+</pre></div>
+
+<h3>
+<a id="result" class="anchor" href="#result" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Result:</h3>
+
+<p><img src="Logger.png"></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/nayo/Logger">Logger js</a> is maintained by <a href="https://github.com/nayo">nayo</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  
 <script src="js/Logger.js"></script>
 <script src="js/main.js"></script>
-</body>
-</html>
+
+</body></html>
+
