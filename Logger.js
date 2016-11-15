@@ -1,7 +1,6 @@
 /*
 Autor: Genaro Contreras Gutierrez
 Email: genaro_contreras@hotmail.com
-
 */
 (function() {
     this.Logger={};
