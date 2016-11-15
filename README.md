@@ -27,7 +27,7 @@ Logger.danger(var1,var2,...,varN);
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>Example Logger.js</title>
 <script src="Logger.js"></script>
 </head>
 <body>
