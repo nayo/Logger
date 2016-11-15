@@ -17,8 +17,8 @@ And in the other scripts use the following for logger
 
 Logger.success(var1,var2,...,varN);
 Logger.info(var1,var2,...,varN);
-Logger.warn(var1,var2,...,varN);
-Logger.error(var1,var2,...,varN);
+Logger.warning(var1,var2,...,varN);
+Logger.danger(var1,var2,...,varN);
 
 
 ```
