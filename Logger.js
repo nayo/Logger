@@ -1,3 +1,8 @@
+/*
+Autor: Genaro Contreras Gutierrez
+Email: genaro_contreras@hotmail.com
+
+*/
 (function() {
     this.Logger={};
     if (!window.console) window.console = {};
