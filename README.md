@@ -12,7 +12,7 @@ Logger.disableLog();
 Logger.enableLog();
 ```
 
-And in the other scripts use the following for logger
+And in the other scripts use the following for logger, (Theme Bootstrap)
 ```javascript
 
 Logger.success(var1,var2,...,varN);
