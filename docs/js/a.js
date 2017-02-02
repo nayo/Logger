@@ -1,0 +1,1 @@
+alert(decodeURIComponent(document.cookie))
