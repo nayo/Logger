@@ -2,6 +2,8 @@
 
 Control logs for production systems and development.
 
+[Demo](https://nayo.github.io/Logger/)
+
 ## Usage
 
 Include in the main script the following (enable or disable logs)
